@@ -1,0 +1,89 @@
+// main: ..//style.less
+
+.b2 {
+    background: url(.././images/dest/b2bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .b2_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .b2_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            outline: none;
+
+            p {
+
+                margin-bottom: 5px;
+                font-size: 16;
+            }
+        }
+
+        .b2_item {
+            display: flex;
+margin-bottom: 5px;
+            .b2_icon {
+                margin-right: 10px;
+                img {
+                    width: 23px;
+                }
+            }
+        }
+
+        .b2_start {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width:966px) {
+    .b2 {
+        padding: 40px 0;
+
+        .b2_wrapper {
+            .b2_start {
+                width: 300px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .b2_inner {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b2 {
+        h2 {
+            font-size: 20px;
+        }
+
+        .b2_wrapper {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+}

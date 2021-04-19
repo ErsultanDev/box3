@@ -1,0 +1,115 @@
+//main: ..//style.less
+
+.b4 {
+    background: url(.././images/dest/b4bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+
+    .b4_wrapper {
+        width: 1000px;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .b4_item {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+
+            .b4_icon {
+                margin-right: 30px;
+                width: 200px;
+
+                img {
+                    width: 100%;
+                }
+
+                &:nth-child(2) {
+                    margin-left: 30px;
+                    margin-right: 0;
+                }
+            }
+
+            .b4_text {
+                width: 800px;
+
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:966px) {
+    .b4 {
+        .b4_wrapper {
+            width: auto;
+
+            .b4_item {
+                flex-direction: column;
+                width: 400px;
+                margin: 30px auto;
+
+                .b4_icon {
+                    margin-bottom: 30px;
+
+                    &:nth-child(2) {
+                        margin-left: 0;
+                    }
+                }
+
+                .b4_text {
+                    width: auto;
+                }
+            }
+
+            .b4_item_two {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .b4 {
+        .b4_wrapper {
+            width: auto;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .b4_item {
+                margin-bottom: 80px;
+                width: 300px;
+
+                .b4_text {
+                    p {
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .b4 {
+        .b4_wrapper {
+            padding: 0 30px;
+
+            .b4_item {
+                width: auto;
+            }
+        }
+    }
+}
