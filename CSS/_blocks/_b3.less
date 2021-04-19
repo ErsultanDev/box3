@@ -1,0 +1,184 @@
+//main: ..//style.less
+.b3 {
+    background: url(.././images/dest/b3bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+
+    .b3_wrapper {
+
+        .b3_start {
+            margin-bottom: 90px;
+
+            h4 {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            .b3_items {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+
+                .b3_item {
+                    margin-top: 10px;
+                    display: flex;
+
+                    p {
+                        font-size: 18px;
+                        line-height: 35px;
+                        font-weight: 400;
+                    }
+
+                    img {
+                        margin-right: 10px;
+                        width: 23px;
+                    }
+                }
+            }
+        }
+
+        .b3_end {
+            h2 {
+                text-align: center;
+                font-size: 32px;
+                margin-bottom: 50px;
+            }
+
+            .b3_cards {
+                display: flex;
+                align-items: end;
+
+                .b3_card {
+                    margin-top: 30px;
+                    border-right: 1px solid #F44172;
+                    padding: 0 30px;
+
+                    &:last-child {
+                        border: 0;
+                    }
+
+                    font-size: 24px;
+
+                    h3 {
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:966px) {
+    .b3 {
+        .b3_wrapper {
+            .b3_start {
+                .b3_items {
+                    flex-direction: column;
+                    margin: 0 auto;
+                    width: 300px;
+                    text-align: center;
+
+                    .b3_item {
+
+                        img {
+                            display: none;
+                        }
+
+                        p {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .b3_end {
+                .b3_cards {
+                    flex-direction: column;
+
+                    .b3_card {
+                        border-top: 1px solid #000;
+                        border-right: none;
+                        width: 300px;
+                        margin: 0 auto;
+                        padding: 30px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:425px) {
+    .b3 {
+        padding: 30px 0;
+
+        .b3_wrapper {
+            padding: 0 30px;
+
+            .b3_start {
+                h4 {
+                    font-size: 19px;
+
+                }
+
+                .b3_items {
+                    margin: 30px auto;
+                    width: 100%;
+                    text-align: left;
+
+                    .b3_item {
+                        margin: 10px 0;
+
+                        p {
+                            font-size: 14px;
+                            line-height: 23px;
+                        }
+                    }
+
+
+                }
+            }
+
+            .b3_end {
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+
+                .b3_cards {
+                    .b3_card {
+                        border: none;
+                        font-size: 18px;
+
+                        h3 {
+
+                            margin-bottom: 18px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and(max-width:375px) {
+    .b3 {
+        .b3_wrapper {
+            .b3_end {
+                .b3_cards {
+                    .b3_card {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
